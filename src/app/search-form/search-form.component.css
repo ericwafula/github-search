@@ -40,5 +40,8 @@
 }
 
 .btn:hover{
-    background-color: #8DA4C5;
+    background-color: white;
+    border: solid #3C5780 3px;
+    color: #3C5780;
+    border-radius: 8px;
 }
