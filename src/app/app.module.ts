@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { BodyComponent } from './body/body.component';
 import { SearchFormComponent } from './search-form/search-form.component';
 import { CardComponent } from './card/card.component';
+import { RepoCardComponent } from './repo-card/repo-card.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CardComponent } from './card/card.component';
     HeaderComponent,
     BodyComponent,
     SearchFormComponent,
-    CardComponent
+    CardComponent,
+    RepoCardComponent
   ],
   imports: [
     BrowserModule,
