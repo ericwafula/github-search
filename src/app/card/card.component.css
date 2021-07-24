@@ -10,6 +10,11 @@
     padding-bottom: 50px;
 }
 
+/* first row */
+#first-row{
+    margin-bottom: 50px;
+}
+
 /* avatar */
 .img-container{
     width: 180px;
