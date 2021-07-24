@@ -20,6 +20,11 @@
     position: relative;
     top: 10px;
     left: 10px;
+    cursor: pointer;
+}
+
+.img-container img:hover{
+    opacity: 75%;
 }
 
 /* nav container */
@@ -39,11 +44,17 @@
     bottom: 7px;
 }
 
+/* about */
 #nav-menu > :first-child{
     color: black;
     opacity: 60%;
     font-size: 24px;
     font-weight: bold;
+    cursor: pointer;
+}
+
+#nav-menu > :first-child:hover{
+    opacity: 40%;
 }
 
 /* profile button */
