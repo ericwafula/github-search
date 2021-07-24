@@ -2,8 +2,17 @@
     width: 400px;
     height: 80px;
     margin: auto;
+    position: relative;
+    font-size: 36px;
+    font-weight: bold;
+    color: #3C5780;
+    border-radius: 0;
 }
 
-/* #search-input::placeholder{
-
-} */
+#search-input::placeholder{
+    font-size: 36px;
+    font-weight: bold;
+    color: #3C5780;
+    position: relative;
+    /* top: 5px; */
+}
