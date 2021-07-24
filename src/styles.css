@@ -9,8 +9,6 @@
 }
 
 body{
-    margin-left: 170px;
-    margin-right: 170px;
     background-image: url('./assets/background-image.png');
     height: 1024px;
     background-position: fixed;
