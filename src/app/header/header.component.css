@@ -21,3 +21,39 @@
     top: 10px;
     left: 10px;
 }
+
+/* nav container */
+#nav-container{
+    display: inline-flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+/* nav menu */
+#nav-menu{
+    display: inline-flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+    position: relative;
+    bottom: 7px;
+}
+
+#nav-menu > :first-child{
+    color: black;
+    opacity: 60%;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* profile button */
+#profile{
+    background-color: #3C5780;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+#profile:hover{
+    background-color: #8DA4C5;
+}
