@@ -16,7 +16,6 @@
     font-weight: bold;
     color: #3C5780;
     position: relative;
-    /* top: 5px; */
 }
 
 /* button */
@@ -37,6 +36,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    margin-bottom: 100px;
 }
 
 .btn:hover{
