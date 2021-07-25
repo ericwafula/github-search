@@ -12,12 +12,13 @@ export class GithubService {
   name:string = "ericwafula";
   
   constructor(private http:HttpClient) { 
-    this.user = new User("", 0);
+    this.user = new User("", "", 0);
   }
 
   getUser(){
     interface ApiResponse{
       name:string;
+      login:string;
       public_repos: number;
     }
 
@@ -25,9 +26,11 @@ export class GithubService {
       this.http.get<ApiResponse>(`https://api.github.com/users/daneden`).toPromise().then(response => {
         this.user.name = response.name;
         this.user.repo = response.public_repos;
+        this.user.login = response.login;
         resolve();
       }, error => {
         this.user.name = "Clare Limo";
+        this.user.login = "clarelimo";
         this.user.repo = 35;
         reject(error);
       })
