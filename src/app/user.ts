@@ -1,5 +1,6 @@
 export class User {
-    firstName:string;
-    lastName:string;
-    constructor(firstName:string, lastName:string){ }
+    name:string;
+    constructor(name:string){ 
+        this.name = name;
+    }
 }
