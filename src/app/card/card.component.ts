@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { GithubService } from '../http-client/github.service';
+import { User } from '../user';
 
 @Component({
   selector: 'app-card',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
-  constructor() { }
+  user:User;
+
+  constructor(private githubService:GithubService) { }
 
   ngOnInit(): void {
+    this.githubService.getUser();
+    this.user = this.githubService.user;
   }
 
 }
