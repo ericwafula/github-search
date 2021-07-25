@@ -4,14 +4,14 @@
         <div class="row" id="first-row">
             <div class="col-md-2">
                 <div class="img-container">
-                    <img src="./assets/Avatar.png" alt="profile avatar">
+                    <img src="{{user.avatar_url}}" alt="profile avatar">
                 </div>
             </div>
             <div class="col-md-6 name">
                 <p id="name"> {{user.name}} </p>
                 <p id="username">@{{user.login}} </p>
                 <div class="location">
-                    <p id="location">London, UK</p>
+                    <p id="location"> {{user.location}} </p>
                 </div>
             </div>
             <div class="col-md-4">
