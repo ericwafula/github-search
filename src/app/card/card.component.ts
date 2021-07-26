@@ -1,6 +1,8 @@
+import { Repository } from './../repository';
 import { Component, OnInit } from '@angular/core';
 import { GithubService } from '../http-client/github.service';
 import { User } from '../user';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-card',
@@ -10,11 +12,12 @@ import { User } from '../user';
 export class CardComponent implements OnInit {
 
   user:User;
+  repo:Repository;
 
   constructor(private githubService:GithubService) { }
 
   ngOnInit(): void {
-    this.githubService.getUser();
+    // this.githubService.getUser("ericwafula");
     this.user = this.githubService.user;
   }
 

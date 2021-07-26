@@ -9,6 +9,7 @@ import { BodyComponent } from './body/body.component';
 import { SearchFormComponent } from './search-form/search-form.component';
 import { CardComponent } from './card/card.component';
 import { RepoCardComponent } from './repo-card/repo-card.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { RepoCardComponent } from './repo-card/repo-card.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

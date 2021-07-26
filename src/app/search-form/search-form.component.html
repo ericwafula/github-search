@@ -1,8 +1,10 @@
-<form>
+<form (ngSubmit)="submitSearch(); searchForm.resetForm({})" #searchForm = 'ngForm'>
     <div class="form-group">
-        <input type="text" name="search" id="search-input" placeholder="Enter Search Query..." class="form-control">
+        <input type="text" name="search" id="search-input" placeholder="Enter Search Query..." class="form-control" [(ngModel)]='newSearch' name='search' #search='ngModel' required>
+
+        <!-- <div class="alert alert-danger" [hidden]='search.valid||search.pristine'>
+            <p>please enter search query</p>
+        </div> -->
     </div>
-    <div id="button-container">
-        <button class="btn">Search!</button>
-    </div>
+    <button class="btn button" routerLink='card'>Search!</button>
 </form>
